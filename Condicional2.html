@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h6>Descuento progresivo según monto - Correcion</h6>
+<body>
+    
+    <input type="number" placeholder="Ingrese el total de la venta" >
+    
+
+    <script>
+function Calcular() {
+    
+    let total = parseFloat(document.getElementById("venta").value);
+    let descuento = 0;
+
+    if (total >= 50000) descuento = 0.2;
+    else if (total >= 20000) descuento = 0.15;
+    else if (total >= 10000) descuento = 0.1;
+
+    let totalFinal = total * (1 - descuento);
+    alert("Descuento aplicado: " + (descuento * 100) + "%\nTotal a pagar: $" + totalFinal.toFixed(2));
+
+
+}
+       
+
+    </script>
+</body>
+</html>

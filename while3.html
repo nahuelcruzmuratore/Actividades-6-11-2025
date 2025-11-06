@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        El Cliente solicito ver el listado de los nombres de los empleados.
+    </h1>
+    <script>
+
+        let empleado = "";
+        let cantidad = 0;
+
+        while (empleado.toLowerCase() !== "salir") {
+            empleado = prompt("Ingresá nombre del empleado (o 'salir'): ");
+            if (empleado.toLowerCase() !== "salir") cantidad++;
+        }
+
+        alert("Se registraron " + cantidad + " empleados.");
+
+    </script>
+</body>
+
+</html>

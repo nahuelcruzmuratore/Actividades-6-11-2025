@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let reclamos = prompt("Tipo de reclamo (ENVIO / FACTURA / PRODUCTO):").toUpperCase();
+        switch (reclamos) {
+            case "ENVIO" alert("El reclamo fue derivado a logística."); break;
+            case "FACTURA" alert("El reclamo fue derivado a contabilidad."); break;
+            case "PRODUCTO" alert("El reclamo fue derivado a atención al cliente."); break;
+            default: alert("Tipo de reclamo no reconocido.");
+        }
+
+    </script>
+</body>
+
+</html>

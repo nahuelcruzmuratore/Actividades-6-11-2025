@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h6>El usuario quiere tambien ver los Nombres de los empleados con salto de linea</h6>
+    <script>
+
+        let empleados = [];
+            let nombre = prompt("Ingresá el nombre del empleado (o 'fin' para terminar):");
+
+            while (nombre.toLowerCase() !== "fin") {
+                empleados.push(nombre);
+                nombre = prompt("Ingresá otro nombre (o 'fin' para terminar):");
+            }
+
+            alert("Total de empleados registrados: " + empleados.length); 
+
+
+             // La propiedad 'length' devuelve la cantidad de elementos que hay en el array.
+            // En este caso, muestra cuántos empleados se registraron.
+               
+
+    </script>
+</body>
+</html>

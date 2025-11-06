@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="inngrese el sotck disponible" >
+    <input type="number" placeholder="Cantidad vendida hoy">
+    <button onclick="funcion">Calcular</button>
+    <h6>
+        Control de stock con alerta de reposición - Correcion
+    </h6>
+
+    <script>
+        function funcion() {
+       
+        let stockk = parseInt(document.getElementByd("stock").vaue)
+            let ventas = parseInt(document.getEementById("venta").value)
+            let sockRestante = stock - ventas;
+
+            if (stockRestante >= 0 && stockRestante <= 5) {
+                alert(" Quedan solo " + stockRestante + " unidades. Reponer inventario urgente.");
+            }else if (stockRestante < 0 )
+            {
+                alert("No hay stock,las ventas superan al stock")
+            } else {
+                alert("Stock suficiente. Restan " + stockRestante + " unidades.");
+            }
+
+             }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h6>El sistema permite al usuario registrar las ventas de cinco empleados y determina cuántos de ellos cumplen con
+        la meta
+        mensual establecida. Primero, el usuario ingresa el valor de la meta de ventas que se debe alcanzar. Luego, el
+        sistema
+        solicita las ventas de cada empleado de manera individual. Por cada empleado, verifica si sus ventas son mayores
+        o
+        iguales a la meta; si es así, incrementa un contador que lleva la cantidad de empleados que cumplieron la meta.
+        Al
+        finalizar, el sistema muestra un mensaje indicando cuántos empleados alcanzaron la meta.</h6>
+    <h6>el usuario quiere agregar los nombres de los empleados y que el sistema muestre quienes cumplen la meta y
+        quienes no </h6>
+    <script>
+
+
+        let meta = parseInt(prompt("Meta mensual:"));
+        let totalCumplen = 0;
+        let Metanocumple = 0;
+
+
+        for (let i = 1; i <= 5; i++) {
+            let ventas = parseInt(prompt("Ventas del empleado " + i));
+            if (ventas >= meta) totalCumplen++;
+        }
+
+        alert("Empleados que cumplieron la meta: " + totalCumplen);
+
+    </script>
+</body>
+
+</html>

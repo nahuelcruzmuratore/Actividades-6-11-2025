@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h6>
+    Desarrolla un programa en JavaScript que permita calcular el sueldo semanal de un trabajador según las horas trabajadas.  
+    El programa debe:
+     Solicitar al usuario (usando prompt) la cantidad de horas trabajadas en la semana.
+     Considerar que el valor de la hora normal es de $1500.
+      Si el trabajador trabajó más de 40 horas, las horas extras deben pagarse con un 50% adicional sobre el valor normal de
+    la hora.
+    Calcular el sueldo total según corresponda.
+    Mostrar el resultado mediante un alert, con el mensaje:
+     "Sueldo semanal: $[monto]"
+
+
+    Valor de la hora normal → $1500
+    Horas extras → valor de la hora × 1.5
+    No se deben ingresar valores negativos.
+
+
+    Inicio
+    Leer horasTrabajadas
+    valorHora ← 1500
+    Si horasTrabajadas > 40 Entonces
+    extras ← horasTrabajadas - 40
+    sueldo ← (40 * valorHora) + (extras * valorHora * 1.5)
+    Sino
+    sueldo ← horasTrabajadas * valorHora
+    FinSi
+    Mostrar "Sueldo semanal: $" + sueldo
+    Fin
+
+</h6>
+<body>
+    
+</body>
+</html>
