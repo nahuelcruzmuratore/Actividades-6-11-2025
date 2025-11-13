@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Ejercicio: Total de ventas
+    
+    Crea un programa en JavaScript que permita ingresar montos de ventas de manera sucesiva.
+    El programa debe sumar todas las ventas y mostrar el total al finalizar.
+    
+    El ingreso de datos termina cuando el usuario ingresa 0.
+    </h6>
+    <script>
+
+        let totalVentas = 0;
+
+        let venta = parseFloat(prompt("Ingresá el monto de la venta (0 para terminar):"));
+        while (venta !== 0) {
+            totalVentas += venta;
+            venta = parseFloat(prompt("Ingresá otro monto de venta (0 para terminar):"));
+        }
+        alert("Total vendido: $" + totalVentas.toFixed(2));
+
+    </script>
+</body>
+</html>

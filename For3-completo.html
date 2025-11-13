@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h6>el usuario quiere agregar los nombres de los empleados y que el sistema muestre quienes cumplen la meta y
+    quienes no</h6>
+    <script>
+
+
+        let meta = parseInt(prompt("Meta mensual:"));
+        let cumplen = "";
+        let noCumplen = "";
+
+        for (let i = 1; i <= 5; i++) {
+            let nombre = prompt("Ingrese el nombre del empleado " + i + ":");
+            let ventas = parseInt(prompt("Ventas de " + nombre + ":"));
+
+            if (ventas >= meta) {
+                cumplen += nombre + "\n";
+            } else {
+                noCumplen += nombre + "\n";
+            }
+        }
+
+        alert(
+            " Empleados que cumplieron la meta:\n" +
+            cumplen +
+            "\n Empleados que no cumplieron la meta:\n" +
+            noCumplen
+        );
+    </script>
+
+
+</body>
+
+</html>

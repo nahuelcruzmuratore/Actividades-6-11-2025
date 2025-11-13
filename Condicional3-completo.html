@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let horas = parseInt(prompt("Horas trabajadas en la semana:"));
+            let valorHora = 1500;
+            let sueldo = 0;
+
+            if (horas > 40) {
+                let extras = horas - 40;
+                sueldo = (40 * valorHora) + (extras * valorHora * 1.5);
+            } else {
+                sueldo = horas * valorHora;
+            }
+
+            alert("Sueldo semanal: $" + sueldo.toFixed(2));
+    </script>
+</body>
+</html>

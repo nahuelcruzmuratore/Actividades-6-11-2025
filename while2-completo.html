@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let intentos = 3;
+            let usuario;
+
+            while (intentos > 0) {
+                usuario = prompt("Usuario:");
+                let clave = prompt("Contraseña:");
+
+                if (usuario === "admin" && clave === "1234") {
+                    alert("Acceso permitido");
+                    break;
+                } else {
+                    intentos--;
+                    alert("Datos incorrectos. Intentos restantes: " + intentos);
+                }
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let suma = 0;
+            let cantidad = parseInt(prompt("¿Cuántos productos vas a registrar?"));
+
+            for (let i = 1; i <= cantidad; i++) {
+                let precio = parseFloat(prompt("Precio del producto " + i ));
+                suma += precio;
+            }
+
+            alert("Precio promedio: $" + (suma / cantidad).toFixed(2));
+
+    </script>
+</body>
+</html>

@@ -16,13 +16,18 @@
 
         let empleado = "";
         let cantidad = 0;
+       
 
         while (empleado.toLowerCase() !== "salir") {
             empleado = prompt("Ingresá nombre del empleado (o 'salir'): ");
-            if (empleado.toLowerCase() !== "salir") cantidad++;
+            if (empleado.toLowerCase() !== "salir") {
+                cantidad++;
+              
+            }
         }
 
         alert("Se registraron " + cantidad + " empleados.");
+     
 
     </script>
 </body>

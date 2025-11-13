@@ -8,20 +8,20 @@
 </head>
 
 <body>
+
+    <input type="number" placeholder="inngrese el sotck disponible" id="stock">
+    <input type="number" placeholder="Cantidad vendida hoy" id="cantidad">
+    <button onclick="funcion()">Calcular</button>
     <h6>
         Control de stock con alerta de reposición - Correcion
     </h6>
-    <input type="number" placeholder="inngrese el sotck disponible" id="stock">
-    <input type="number" placeholder="Cantidad vendida hoy" id="venta">
-    <button onclick="funcion()">Calcular</button>
-
 
     <script>
         function funcion() {
 
-            let stock = parseInt(document.getElementById("stock").value)
-            let ventas = parseInt(document.getElementById("venta").value)
-            let stockRestante = stock - ventas;
+            let stock = parseInt(document.getElementByd("stock").value)
+            let ventas = parseInt(document.get("venta").value)
+            let sockRestante = stock - ventas;
 
             if (stockRestante >= 0 && stockRestante <= 5) {
                 alert(" Quedan solo " + stockRestante + " unidades. Reponer inventario urgente.");

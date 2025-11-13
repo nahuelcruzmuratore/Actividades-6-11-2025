@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+                let presupuesto = parseFloat(prompt("Presupuesto disponible:"));
+                let gasto = 0;
+
+            while (presupuesto > 0) {
+                    let compra = parseFloat(prompt("Ingresá el valor de la compra (0 para salir):"));
+                if (compra === 0) break;
+                presupuesto -= compra;
+                gasto += compra;
+                alert("Restante: $" + presupuesto.toFixed(2));
+            }
+
+                alert("Total gastado: $" + gasto.toFixed(2));
+    </script>
+</body>
+</html>
